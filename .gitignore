@@ -1,2 +1,3 @@
 *.csv
 Venv_enem
+__pycache__/
