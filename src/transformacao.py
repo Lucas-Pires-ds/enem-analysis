@@ -131,4 +131,8 @@ print(f"""Dados atualizados do dataframe:
       
 - {len(df):,} linhas      
 - {len(df.columns)} colunas
-- Memória utilizada: {(int(df.memory_usage().sum())/1_000_000):,.2f} MBs""")
+- Memória utilizada: {(int(df.memory_usage().sum())/1_000_000):,.2f} MBs\n""")
+
+df.to_csv("../data/processed/dados_processados.csv", sep=";")
+
+print("Dados transformados salvos no diretório data/processed.\n")
